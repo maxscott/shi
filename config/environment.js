@@ -20,6 +20,15 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.contentSecurityPolicy = {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'connect-src': "'self'",
+      'img-src': "'self' http://placehold.it https://placeholdit.imgix.net",
+      'style-src': "'self' http://fonts.googleapis.com",
+      'media-src': "'self'"
+    }
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;

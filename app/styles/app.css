@@ -1,0 +1,22 @@
+@import "components/nav-bar.css";
+
+:root {
+  --purple: #847AD1;
+  --large: 10px;
+}
+
+a {
+  color: var(--purple);
+  transition: color .2s;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: color(var(--purple) tint(75%));
+}
+
+pre {
+  padding: var(--large);
+  margin: calc(var(--large) * 2);
+}

@@ -1,0 +1,55 @@
+<!-- Navigation -->
+<div class="nav-bar contain-to-grid fixed">
+
+  <nav class="top-bar {{if isExpanded 'expanded'}}" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+    <h1>
+      {{#link-to 'application' class="logo show-for-small-only"}}
+        <img src="http://placehold.it/50x50" />
+      {{/link-to}}
+    </h1>
+    </li>
+    <li class="toggle-topbar menu-icon">
+      <button {{action 'toggleExpanded'}}>
+        <span>
+          {{#if isExpanded}}less{{else}}more{{/if}}
+        </span>
+      </button>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+
+  <div class="logo-wrapper hide-for-small-only">
+    <div class="logo">
+      <img src="http://placehold.it/350x150">
+    </div>
+  </div>
+
+  <!-- Right Nav Section -->
+  <ul class="right">
+    <li><a href="#">GALLERY</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+
+  <!-- Left Nav Section -->
+  <ul class="left">
+    <li class="has-dropdown">
+    <a href="#">PROJECTS</a>
+    <ul class="dropdown">
+      <li><a href="#">First link in dropdown</a></li>
+    </ul>
+    </li>
+    <li class="has-dropdown">
+    <a href="#">MATERIALS</a>
+    <ul class="dropdown">
+      <li><a href="#">First link in dropdown</a></li>
+    </ul>
+    </li>
+  </ul>
+
+  </section>
+  </nav>
+
+</div><!-- /navigation -->
